@@ -83,7 +83,7 @@ export function FavoriteCities() {
             <FavoriteCityTablet
               key={city.id}
               {...city}
-              onRemove={() => removeFavorite.mutate(city.id)}
+              onRemove={() => removeFavorite(city.id)}
             />
           ))}
         </div>
